@@ -1,0 +1,52 @@
+main{
+  width: 1400px;
+  margin: 20px auto;
+  padding: 20px ;
+}
+
+body{
+background-color: black;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+  font-size: 1.3em;
+}
+
+.border{
+  position: relative;
+  background-color: gray;
+}
+
+.border::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: calc(100% + 8px);
+height: calc(100% + 8px);
+transform: translate(-4px, -4px);
+background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f) 0 50%;;
+background-size: 300% 300%;
+animation: gradient-animation 2.5s alternate infinite;
+border-radius: 8px;
+z-index: -1;
+}
+@keyframes gradient-animation{
+  50%{
+    background-position: 100% 50%;
+  }
+}

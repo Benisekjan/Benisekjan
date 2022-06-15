@@ -1,0 +1,101 @@
+main{
+    width: 1400px;
+    margin: 20px auto;
+    padding: 20px ;
+  }
+  
+  body{
+  background-color: black;
+  }
+  
+  h1{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+  }
+  
+  h2{
+    
+  }
+  
+  h3{
+    
+  }
+  h4{
+    padding-left: 7cm;
+    font-size: 1.6em;
+  }
+  h5{
+    padding-left: 4.5cm;
+    font-size: 1.5em;
+  }
+  h6{
+    padding-left: 4cm;
+  }
+  p{
+    font-size: 1.3em;
+    padding-left: 4cm;
+    
+  }
+  table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 35%;
+  }
+  .center {
+    margin-left: 4cm;
+    
+  }
+  .logic{
+    margin-left: 4cm;
+    width: 50%;
+  }
+  
+  .border{
+    position: relative;
+    background-color: white;
+  }
+  
+  .mark{
+    background: lightgray;
+  }
+  ul,li{
+    font-size: 1.1em;
+    padding-left: 1cm;
+    
+  }
+
+  .syntaxe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42.3%;
+    
+  }
+
+  
+
+  .border::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    transform: translate(-10px, -10px);
+    background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f) 0 50%;;
+    background-size: 300% 300%;
+    animation: gradient-animation 2.5s alternate infinite;
+    border-radius: 8px;
+    z-index: -1;
+    }
+    @keyframes gradient-animation{
+      50%{
+        background-position: 100% 50%;
+      }
+    }
+
+   
+
+
+

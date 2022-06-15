@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Jazyk C</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Jazyk C</h1>
+  </header>
+
+  <main class="border">
+
+    <h4>Datové typy</h4>
+
+    <h5><u>char</u></h5>
+    <p>Velikost : 1 byte(8 bitů)</p>
+    <p>Rozsah char -128 až 127 <strong>%c</strong></p>
+    <p>Rozsah unsignetchar 0 až 255 <strong>%c</strong></p>
+    <p>Užití : Můžeme použít při uložení kláves do proměnné například : </p>
+    <p>char klavesa;</p>
+    <p> printf("Pro pokračování stiskněte klávesu 'Z' ");</p>
+    <p>scanf("%c",klavesa);</p>
+
+    <h5><u>int</u></h5>
+    <p>Velikost : 2 - 4 byte(16 - 32 bitů) </p>
+    <p>Rozsah int -32 768 až 32 767 <strong>%d</strong></p>
+    <p>Rozsah unsignetint 0 sž 65 535 <strong>%u</strong></p>
+    <p>Užití : Pro uložení celých čísel.</p>
+
+    <h5><u>float</u></h5>
+    <p>velikost : 4 byty(32 bitů)</p>
+    <p><strong>%f</strong></p>
+    <p>Užití : Pro uložení desetínných čísel. </p>
+
+    <h5><u>double</u>></h5>
+    <p>velikost : 8 byty(64 bitů)</p>
+    <p><strong>%lf</strong></p>
+
+
+    <h5><u>long</u>></h5>
+    <p>velikost : 4 byty(32 bitů)</p>
+
+
+
+    <h4>Syntaxe</h4>
+    <p> <br> #include <strong>Základní knihovna jazyka C</strong> </br>
+      <br> int main() { <strong>Základní funkce ohraničená složenými závorkami</strong> </br>
+      <br> printf("Hello World!"); <strong>Funkce, která slouží k výpisu na obrazovku</strong> </br>
+      <br> return 0; <strong>Zakončení funkce</strong></br>
+      <br> } </br>
+    </p>
+
+    <h4>Proměnné</h4>
+    <p> int celeCis = 34;</p>
+    <p> float desCis = 10.12;</p>
+    <p> char klavesa = 'Z';</p>
+
+    <h4>Constanty</h4>
+    <p>const int minutesPerHour = 60;</p>
+    <p>const float PI = 3.14;</p>
+    <p>const int BIRTHYEAR = 1980;</p>
+
+    <p>&nbsp</p>
+
+    <h4>Operátory</h4>
+    <table class="center">
+      <tr>
+        <th> Operátor </th>
+        <th> Název </th>
+        <th> Příklad </th>
+      </tr>
+      <tr>
+        <td> + </td>
+        <td> Sčítání </td>
+        <td> x + y </td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>Odčítání</td>
+        <td> x - y</td>
+      </tr>
+      <tr>
+        <td>*</td>
+        <td>Krát</td>
+        <td>x * y</td>
+      </tr>
+      <tr>
+        <td>/</td>
+        <td>Děleno</td>
+        <td>x / y</td>
+      </tr>
+      <tr>
+        <td>%</td>
+        <td>Zbytek po dělení</td>
+        <td>x % y</td>
+      </tr>
+      <tr>
+        <td>++</td>
+        <td>Zvedne hodnotu o 1</td>
+        <td>x++</td>
+      </tr>
+      <tr>
+        <td>--</td>
+        <td>Sníží hodnotu o 1</td>
+        <td>--x</td>
+      </tr>
+    </table>
+
+    <p>&nbsp</p>
+
+    <h5>Porovnávání</h5>
+    <table class="center">
+      <tr>
+        <th>Operátor</th>
+        <th>Název</th>
+        <th>Příklad</th>
+      </tr>
+      <tr>
+        <td>==</td>
+        <td>Rovná se</td>
+        <td> x == y</td>
+      </tr>
+      <tr>
+        <td>!=</td>
+        <td>Nerovná se</td>
+        <td> y != x</td>
+      </tr>
+      <tr>
+        <td> > </td>
+        <td>Větší než</td>
+        <td> x > y </td>
+      </tr>
+      <tr>
+        <td>
+          < </td>
+        <td>Menší než</td>
+        <td> x < y </td>
+      </tr>
+      <tr>
+        <td> >= </td>
+        <td>Větší nebo rovno</td>
+        <td> x >= y</td>
+      </tr>
+      <tr>
+        <td>
+          <= </td>
+        <td>Menší než nebo rovno</td>
+        <td> x <= y</td>
+      </tr>
+    </table>
+
+    <p>&nbsp</p>
+
+    <h5>Logické operátory</h5>
+    <table class="logic">
+      <tr>
+        <th>Operátor</th>
+        <th>Název</th>
+        <th>Popisek</th>
+        <th>Příklad</th>
+      </tr>
+      <tr>
+        <td>&&</td>
+        <td>"A"</td>
+        <td>Vrátí "pravda" hodnotu pokud jsou oba výroky pravdivé</td>
+        <td> x < 5 && x < 10 </td>
+      </tr>
+      <tr>
+        <td>||</td>
+        <td>"Nebo"</td>
+        <td>Vrátí "pravda" pokud je jeden výrok pravdivý</td>
+        <td> x < 5 || x < 4 </td>
+      </tr>
+    </table>
+
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+
+    <h4>Podmínky</h4>
+    <p>if - Pokud podmínka neplatí vykoná se podmínka ve funkci else</p>
+    <p>else if - Je použita po podmínce if kdy je znovu vyhodnocena podmínka </p>
+    <p>else - náskeduje po if nebo také else if a slouží k provedení bloku kodu pokud je podmínka nepravdivá</p>
+    <p>switch - Pužívá se, když má být provedeno více bloků kodu</p>
+
+    <p>&nbsp</p>
+
+    <h4>Loopy</h4>
+    <h5>do/while</h5>
+    <p>"Dělej dokud"</p>
+    <p>např. přičítej číslo dokud nebude větší než 5</p>
+    <p>int i = 0;</p>
+    <p>do {</p>
+    <p> printf("%d\n", i);</p>
+    <p> i++;</p>
+    <p> }</p>
+    <p>while (i < 5);</p>
+
+    <h5>for</h5>
+    <p>používá se pokud víme přesně kolikrát chceme loop opakovat</p>
+    <p>příkaz je rozdělen do 3 částí </p>
+    <p>for (statement 1; statement 2; statement 3) {</p>
+    <p> //blok kodu, který má být proveden</p>
+    <p>}</p>
+    <p>příklad vypíše čísla od 0 do 4</p>
+    <p>int i;</p>
+    <p>for (i = 0; i < 5; i++) {</p>
+    <p>printf("%d\n", i);</p>
+    <p>}</p>
+    <h4>Funkce</h4>
+    <p>main() je funkcí</p>
+    <p>int main(){ </p>
+    <p>printf("Hello World!");</p>
+    <p>return 0;</p>
+    <p>}</p>
+    <p>Novou funkci píšeme vždy před main funkci.</p>
+    <p>void mojeFunkce(){</p>
+    <p> //blok kodu</p>
+    <p>}</p>
+    <p>void - návratová hodnota</p>
+    <p>mojeFunkce - název funkce</p>
+    <p>() - kulatá závorka do ní umístíme parametry např (int z,int y)</p>
+    <p> blok kodu uzavřeme do hranatých závorek {}</p>
+
+    <h5>Vyvolání funkce</h5>
+    <p> void mojeFunkce(){</p>
+    <p>printf("Hello World")</p>
+    <p>}</p>
+    <p>&nbsp</p>
+    <p>int main() { </p>
+    <p>&nbsp mojeFunkce(); // vyvolá funkci</p>
+    <p>&nbsp return 0;</p>
+    <p>}</p>
+    <p>výstup bude "Hello World"</p>
+  </main>
+
+  <footer>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
